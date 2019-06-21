@@ -1,6 +1,3 @@
-for i in range(1, 101):
-    print(i)
-
 x = 0
 y = 1
 
@@ -9,3 +6,5 @@ if y <= 100:
    x=x+y
    print (x)
    y=y+1
+
+print("計算を終了します")
