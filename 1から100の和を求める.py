@@ -2,7 +2,7 @@ x = 0
 y = 1
 
 if y <= 100:
-  for y in range(1, 101):
+  for i in range(y, 101):
    x=x+y
    print (x)
    y=y+1
