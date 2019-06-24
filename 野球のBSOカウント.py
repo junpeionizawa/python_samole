@@ -5,7 +5,7 @@ import random
 for N in range(1,7):
  if  N  <= 7:
  	print(N)
- 	mylist = ["ストライク！！", "ボール！！"]
+ 	mylist = ["strike!", "ball!"]
  	s1 = random.choice(mylist)
  	print(s1)
  if s1 == "strike!":
@@ -18,6 +18,3 @@ for N in range(1,7):
  if bl > 3:
  	print("フォアボール!!")
  	break
-
-
-
