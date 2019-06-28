@@ -37,3 +37,20 @@ y = step_function(x)
 plt.plot(x,y)
 plt.ylim(-0.1,1.1)#y軸の範囲を指定
 plt.show()
+
+
+#シグモイド関数
+import numpy as np
+import matplotlib.pylab as plt
+
+def step_function(x):
+	return np.array(x > 0,dtype = np.int)
+def sigmoid(x):
+	return 1 / (1 + np.exp(-x))
+#-5.0から5.0までの範囲を,0.1刻みで配列を生成　
+x = np.arange(-5.0,5.0,0.1)
+#配列を引数にとり、ステップ関数を実行して配列に返す
+y = sigmoid(x)
+plt.plot(x,y)
+plt.ylim(-0.1,1.1)#y軸の範囲を指定
+plt.show()
